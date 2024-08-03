@@ -8,6 +8,26 @@ export default styles = StyleSheet.create({
     listContent: {
         padding: 10,
     },
+    cabDeatilsContainer: {
+        margin: 8,
+        backgroundColor: 'white',
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.3,
+        shadowRadius: 2,
+        elevation: 3,
+    },
+    mycabContainer: {
+        marginBottom: 30,
+        backgroundColor: 'white',
+        borderRadius: 5,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.3,
+        shadowRadius: 2,
+        elevation: 3,
+    },
     itemContainer: {
         flexDirection: 'row',
         margin: 5,
@@ -54,11 +74,11 @@ export default styles = StyleSheet.create({
         marginBottom: 10,
     },
     button: {
-        marginTop: 20,
         padding: 10,
         backgroundColor: '#007BFF',
         borderRadius: 5,
         alignItems: 'center',
+        margin: 5,
     },
     buttonText: {
         color: '#fff',

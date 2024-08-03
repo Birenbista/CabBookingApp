@@ -7,7 +7,7 @@ const BookingStack = createNativeStackNavigator()
 
 const commonHeaderOptions = {
     headerStyle: {
-        backgroundColor: '#9381ff',
+        backgroundColor: '#38419D',
     },
     headerTintColor: '#fff',
 }

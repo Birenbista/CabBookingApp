@@ -10,13 +10,13 @@ import {
 import React, { useEffect, useState } from 'react'
 import * as database from '../Database'
 import styles from './styles'
+
 export default function CabList({ navigation }) {
     const [cabs, setCabs] = useState([])
 
     useEffect(() => {
         ;(async () => {
             const data = await database.loadCabList()
-            // console.log(data)
             setCabs(data)
         })()
     }, [])

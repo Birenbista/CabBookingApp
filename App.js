@@ -31,11 +31,11 @@ export default function App() {
                         )
                     },
                     headerShown: false,
-                    tabBarActiveTintColor: '#fff',
-                    tabBarInactiveTintColor: '#04080f',
+                    tabBarActiveTintColor: '#3887BE',
+                    tabBarInactiveTintColor: '#fff',
                     tabBarShowLabel: false,
                     tabBarStyle: {
-                        backgroundColor: '#9381ff',
+                        backgroundColor: '#38419D',
                     },
                 })}
             >

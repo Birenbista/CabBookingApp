@@ -34,3 +34,17 @@ export async function loadCabDetails(cabId) {
     // console.log(data)
     return data
 }
+
+export async function loadMyCabDetails() {
+    // const loadCategory = category.toLowerCase()
+    const data = []
+    const querySnapshot = await getDocs(collection(db, 'BookingDetails'))
+    querySnapshot.forEach(doc => {
+        data.push({
+            ...doc.data(),
+            id: doc.id,
+        })
+    })
+    // console.log(data)
+    return data
+}
