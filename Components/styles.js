@@ -84,4 +84,13 @@ export default styles = StyleSheet.create({
         color: '#fff',
         fontSize: 16,
     },
+    messageContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    messageText: {
+        fontSize: 18,
+        color: '#333',
+    },
 })

@@ -87,12 +87,20 @@ const BookedCab = ({ route, navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <FlatList
-                data={myCabs}
-                keyExtractor={item => item.id}
-                renderItem={renderItem}
-                contentContainerStyle={styles.listContent}
-            />
+            {myCabs.length === 0 ? (
+                <View style={styles.messageContainer}>
+                    <Text style={styles.messageText}>
+                        "No booked cabs yet. Browse and book your ride!"
+                    </Text>
+                </View>
+            ) : (
+                <FlatList
+                    data={myCabs}
+                    keyExtractor={item => item.id}
+                    renderItem={renderItem}
+                    contentContainerStyle={styles.listContent}
+                />
+            )}
         </SafeAreaView>
     )
 }
